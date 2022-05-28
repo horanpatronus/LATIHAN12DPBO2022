@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <title>Tabel Pasien</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">WIW</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <br />
+  <br />
+
+  <div style="margin-left: 5%">
+    <br>
+
+    <!-- Tabel 1 -->
+    <div style="display: inline-block; ">
+      <h3>TABEL PASIEN</h3>
+      <!-- TABEL1 --> 
+
+      <!-- <a class="btn" href="templates/form.html"><button type="submit" name="add" class="btn btn-primary mt-3 mb-3">Tambah Data Pasien</button></a> -->
+      <br />
+  <div class="d-flex">
+
+
+  <div class="d-flex w-40">
+    <div class="card container p-5 mr-5">
+      <h2 class="card-title">Tambah Data Pasien</h2>
+      <form action="index.php" method="POST">
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="nik">NIK</label>
+            <input type="text" class="form-control" name="nik" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col">
+              <label for="nama">Nama</label>
+              <input type="text" class="form-control" name="nama" required />
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col">
+              <label for="tempat">Tempat Lahir</label>
+              <input type="text" class="form-control" name="tempat" required />
+            </div>
+        </div>
+    
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="tl">Tanggal Lahir</label>
+            <input class="form-control" type="date" name="tl" name="tl" required />
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col">
+              <label for="gender">Gender</label>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="gender1" value="Laki-laki" />
+                  <label class="form-check-label" for="tgender1">Laki-laki</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="gender2" value="Perempuan" />
+                  <label class="form-check-label" for="tgender1">Perempuan</label>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col">
+              <label for="email">Email</label>
+              <input type="text" class="form-control" name="email" required />
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col">
+              <label for="telp">No. Telpon</label>
+              <input type="text" class="form-control" name="telp" required />
+            </div>
+        </div>
+    
+        <button type="submit" name="add" class="btn btn-primary">Add</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="d-flex w-50">
+    <table class="table" style="text-align: center;">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">NO</th>
+            <th scope="col">NIK</th>
+            <th scope="col">NAMA</th>
+            <th scope="col">TEMPAT</th>
+            <th scope="col">TANGGAL LAHIR</th>
+            <th scope="col">GENDER</th>
+            <th scope="col">EMAIL</th>
+            <th scope="col">TELEPON</th>
+            <th scope="col">AKSI</th>
+          </tr>
+        </thead>
+        <tr>
+
+          DATA_TABEL
+        </tr>
+
+      </table>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
